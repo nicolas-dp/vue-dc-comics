@@ -32,29 +32,106 @@
       <div class="container">
         <div class="footer_menu">
           <a href="#">
-            <img height="90" src="@/assets/img/buy-comics-digital-comics.png" alt="..." />
+            <img
+              height="90"
+              src="@/assets/img/buy-comics-digital-comics.png"
+              alt="..."
+            />
             <span>digital comics</span>
           </a>
 
           <a href="#">
-            <img height="90" src="@/assets/img/buy-comics-merchandise.png" alt="..." />
+            <img
+              height="90"
+              src="@/assets/img/buy-comics-merchandise.png"
+              alt="..."
+            />
             <span>dc merchandise</span>
           </a>
 
           <a href="#">
-            <img height="90" src="@/assets/img/buy-comics-subscriptions.png" alt="..." />
+            <img
+              height="90"
+              src="@/assets/img/buy-comics-subscriptions.png"
+              alt="..."
+            />
             <span>subscription</span>
           </a>
 
           <a href="#">
-            <img height="90" src="@/assets/img/buy-comics-shop-locator.png" alt="..." />
+            <img
+              height="90"
+              src="@/assets/img/buy-comics-shop-locator.png"
+              alt="..."
+            />
             <span>comic shop locator</span>
           </a>
 
           <a href="#">
-            <img style="height: 60px;" src="@/assets/img/buy-dc-power-visa.svg" alt="..." />
+            <img
+              style="height: 60px"
+              src="@/assets/img/buy-dc-power-visa.svg"
+              alt="..."
+            />
             <span>dc power visa</span>
           </a>
+        </div>
+      </div>
+      <div class="footer_end_menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <h4>DC COMICS</h4>
+              <ul>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Videos</li>
+                <li>News</li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <h4>DC COMICS</h4>
+              <ul>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Videos</li>
+                <li>News</li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <h4>DC COMICS</h4>
+              <ul>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Videos</li>
+                <li>News</li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <h4>DC COMICS</h4>
+              <ul>
+                <li>Characters</li>
+                <li>Comics</li>
+                <li>Movies</li>
+                <li>TV</li>
+                <li>Games</li>
+                <li>Videos</li>
+                <li>News</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -144,7 +221,7 @@ footer {
   flex-wrap: wrap;
   padding: 1rem;
 
-  &>a {
+  & > a {
     color: white;
     display: flex;
     border: none;
@@ -152,5 +229,33 @@ footer {
     flex-wrap: wrap;
     padding: 0.7rem;
   }
+}
+/* Footer end menu*/
+.footer_end_menu {
+  background-image: url("@/assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  h4 {
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      color: gray;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: calc(100% / 3);
+  }
+}
+
+.col-3 {
+  margin-top: 2rem;
+  width: calc(100% / 3);
 }
 </style>
