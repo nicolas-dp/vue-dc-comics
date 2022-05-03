@@ -77,7 +77,7 @@
           </a>
         </div>
       </div>
-      <div class="footer_end_menu">
+      <div class="footer_center_menu">
         <div class="container">
           <div class="row">
             <div class="col-3">
@@ -130,6 +130,38 @@
                 <li>Videos</li>
                 <li>News</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_end_menu">
+        <div class="container">
+          <div class="payment">
+            <div class="button">
+              <a>sing-up now</a>
+            </div>
+
+            
+            <div class="follow">
+              <span>
+                <h4>FOLLOW US</h4>
+              </span>
+              <a href="#"
+                ><img src="@/assets/img/footer-facebook.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="@/assets/img/footer-facebook.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="@/assets/img/footer-facebook.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="@/assets/img/footer-facebook.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="@/assets/img/footer-facebook.png" alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -230,8 +262,8 @@ footer {
     padding: 0.7rem;
   }
 }
-/* Footer end menu*/
-.footer_end_menu {
+/* Footer center menu*/
+.footer_center_menu {
   background-image: url("@/assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,5 +289,14 @@ footer {
 .col-3 {
   margin-top: 2rem;
   width: calc(100% / 3);
+}
+
+/* Footer end menu payment*/
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 </style>
