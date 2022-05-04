@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 
 .site_footer {
-  background-color: #0282f9;
+  background-color: $dc-primary;
 }
 
 .footer_menu {
@@ -62,7 +62,7 @@ export default {
   padding: 1rem;
 
   &>a {
-    color: white;
+    color: $dc-white;
     display: flex;
     border: none;
     align-items: center;

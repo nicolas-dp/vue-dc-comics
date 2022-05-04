@@ -90,12 +90,12 @@ export default {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $dc-main-bg;
   padding: 0.5rem;
   text-transform: uppercase;
 
   &:hover {
-    border-bottom: 3px solid #0282F9;
+    border-bottom: 3px solid $dc-primary;
 ;
   }
 }

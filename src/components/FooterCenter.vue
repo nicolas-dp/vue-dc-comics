@@ -55,102 +55,91 @@ export default {
           ],
         },
         {
-          title: "DC COMICS",
+          title: "DC",
           links: [
             {
               href: "#",
-              text: "Characters",
+              text: "Terms Of Use",
             },
             {
               href: "#",
-              text: "Comics",
+              text: "Privacy policy(New)",
             },
             {
               href: "#",
-              text: "Movies",
+              text: "Ad Choices",
             },
             {
               href: "#",
-              text: "TV",
+              text: "Advertising",
             },
             {
               href: "#",
-              text: "Games",
+              text: "Jobs",
             },
             {
               href: "#",
-              text: "Videos",
+              text: "Subscriptions",
             },
             {
               href: "#",
-              text: "News",
+              text: "Talent Workshops",
             },
+            {
+              href: "#",
+              text: "CPSC Certificates",
+            },
+            {
+              href: "#",
+              text: "Ratings",
+            },
+            {
+              href: "#",
+              text: "Shop Help",
+            },
+            {
+              href: "#",
+              text: "Contact Us",
+            }
           ],
         },
         {
-          title: "DC COMICS",
+          title: "SITES",
           links: [
             {
               href: "#",
-              text: "Characters",
+              text: "DC",
             },
             {
               href: "#",
-              text: "Comics",
+              text: "MAD",
             },
             {
               href: "#",
-              text: "Movies",
+              text: "DC Kids",
             },
             {
               href: "#",
-              text: "TV",
+              text: "DC Universe",
             },
             {
               href: "#",
-              text: "Games",
-            },
-            {
-              href: "#",
-              text: "Videos",
-            },
-            {
-              href: "#",
-              text: "News",
-            },
+              text: "DC Power Visa",
+            }
+            
           ],
         },
         {
-          title: "DC COMICS",
+          title: "SHOP",
           links: [
             {
               href: "#",
-              text: "Characters",
+              text: "Shop DC",
             },
             {
               href: "#",
-              text: "Comics",
-            },
-            {
-              href: "#",
-              text: "Movies",
-            },
-            {
-              href: "#",
-              text: "TV",
-            },
-            {
-              href: "#",
-              text: "Games",
-            },
-            {
-              href: "#",
-              text: "Videos",
-            },
-            {
-              href: "#",
-              text: "News",
-            },
+              text: "Shop DC Collectibles",
+            }
           ],
         },
       ],
@@ -167,7 +156,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   h4 {
-    color: white;
+    color: $dc-white;
   }
 
   ul {
