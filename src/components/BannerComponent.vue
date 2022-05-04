@@ -57,7 +57,7 @@ export default {
 
 .footer_menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem;
 
@@ -72,7 +72,7 @@ export default {
   }
 
   img{
-      height: 70px;
+      height: 50px;
   } 
 }
 </style>

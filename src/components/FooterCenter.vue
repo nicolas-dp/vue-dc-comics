@@ -3,10 +3,16 @@
     <div class="footer_bg_image">
       <div class="container">
         <div class="row">
-          <div class="col-3" v-for="({title, links},index) in footerMenu" :key="index">
-            <h4>{{title}}</h4>
+          <div
+            class="col-3"
+            v-for="({ title, links }, index) in footerMenu"
+            :key="index"
+          >
+            <h4>{{ title }}</h4>
             <ul>
-              <li v-for="(link, index) in links" :key="index">{{link.text}}</li>
+              <li v-for="(link, index) in links" :key="index">
+                {{ link.text }}
+              </li>
             </ul>
           </div>
         </div>
@@ -100,7 +106,7 @@ export default {
             {
               href: "#",
               text: "Contact Us",
-            }
+            },
           ],
         },
         {
@@ -125,8 +131,7 @@ export default {
             {
               href: "#",
               text: "DC Power Visa",
-            }
-            
+            },
           ],
         },
         {
@@ -139,7 +144,7 @@ export default {
             {
               href: "#",
               text: "Shop DC Collectibles",
-            }
+            },
           ],
         },
       ],
@@ -155,6 +160,7 @@ export default {
   background-image: url("@/assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  
   h4 {
     color: $dc-white;
   }
@@ -167,9 +173,11 @@ export default {
   }
 
   .footer_bg_image {
-    background-image: url('@/assets/img/dc-logo-bg.png');
-    background-position: right;
+    background-image: url("@/assets/img/dc-logo-bg.png");
     background-repeat: no-repeat;
+    background-position-x: 91%;
+    background-position-y: 53%;
+    background-size: 40rem;
   }
 
   .row {
@@ -177,6 +185,7 @@ export default {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: calc(100% / 3);
+    padding-bottom: 3rem;
   }
 }
 

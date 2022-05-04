@@ -10,7 +10,7 @@
     <section class="grid">
       <div class="container">
         <div class="row">
-          <div class="col" v-for="(serie, index) in series" :key="index">
+          <div class="col-6" v-for="(serie, index) in series" :key="index">
             <img
               width="200"
               height="200"
@@ -151,18 +151,24 @@ main {
   }
 }
 
-
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: calc(100% / 2);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
 
 .col-6 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: calc(100% / 6);
 }
 
-
+.text_card {
+  padding-top: 0.5rem;
+  span{
+    text-transform: uppercase;
+    font-family: fantasy;
+    padding-right: 0.5rem;
+  }
+}
 </style>
