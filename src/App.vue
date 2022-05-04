@@ -1,168 +1,36 @@
 <template>
   <div id="app">
-    <header>
+    <SiteHeader />
+    <SiteMain />
+    <SiteBanner />
+    <SiteFooterCenter />
+    
+    <footer class="footer_end_menu">
       <div class="container">
-        <nav class="logo_navabar">
-          <div class="logo">
-            <img src="@/assets/img/dc-logo.png" alt="..." />
+        <div class="payment">
+          <div class="button">
+            <a>sing-up now</a>
           </div>
-          <div class="menu">
-            <a href="#">characters</a>
-            <a href="#">comics</a>
-            <a href="#">movies</a>
-            <a href="#">tv</a>
-            <a href="#">games</a>
-            <a href="#">collectibles</a>
-            <a href="#">videos</a>
-            <a href="#">fans</a>
-            <a href="#">news</a>
-            <a href="#">shop</a>
-          </div>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      <div class="container">
-        <h1>-- Content goes here --</h1>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer_menu">
-          <a href="#">
-            <img
-              height="90"
-              src="@/assets/img/buy-comics-digital-comics.png"
-              alt="..."
-            />
-            <span>digital comics</span>
-          </a>
-
-          <a href="#">
-            <img
-              height="90"
-              src="@/assets/img/buy-comics-merchandise.png"
-              alt="..."
-            />
-            <span>dc merchandise</span>
-          </a>
-
-          <a href="#">
-            <img
-              height="90"
-              src="@/assets/img/buy-comics-subscriptions.png"
-              alt="..."
-            />
-            <span>subscription</span>
-          </a>
-
-          <a href="#">
-            <img
-              height="90"
-              src="@/assets/img/buy-comics-shop-locator.png"
-              alt="..."
-            />
-            <span>comic shop locator</span>
-          </a>
-
-          <a href="#">
-            <img
-              style="height: 60px"
-              src="@/assets/img/buy-dc-power-visa.svg"
-              alt="..."
-            />
-            <span>dc power visa</span>
-          </a>
-        </div>
-      </div>
-      <div class="footer_center_menu">
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <h4>DC COMICS</h4>
-              <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
-              </ul>
-            </div>
-
-            <div class="col-3">
-              <h4>DC COMICS</h4>
-              <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
-              </ul>
-            </div>
-
-            <div class="col-3">
-              <h4>DC COMICS</h4>
-              <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
-              </ul>
-            </div>
-
-            <div class="col-3">
-              <h4>DC COMICS</h4>
-              <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer_end_menu">
-        <div class="container">
-          <div class="payment">
-            <div class="button">
-              <a>sing-up now</a>
-            </div>
-
-            
-            <div class="follow">
-              <span>
-                <h4>FOLLOW US</h4>
-              </span>
-              <a href="#"
-                ><img src="@/assets/img/footer-facebook.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="@/assets/img/footer-facebook.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="@/assets/img/footer-facebook.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="@/assets/img/footer-facebook.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="@/assets/img/footer-facebook.png" alt=""
-              /></a>
-            </div>
+          <div class="follow">
+            <span>
+              <h4>FOLLOW US</h4>
+            </span>
+            <a href="#"
+              ><img src="@/assets/img/footer-facebook.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="@/assets/img/footer-facebook.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="@/assets/img/footer-facebook.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="@/assets/img/footer-facebook.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="@/assets/img/footer-facebook.png" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -171,127 +39,30 @@
 </template>
 
 <script>
-/* import HelloWorld from './components/HelloWorld.vue' */
-
+import SiteHeader from "./components/HeaderComponent.vue";
+import SiteMain from "./components/MainComponent.vue";
+import SiteBanner from "./components/BannerComponent.vue";
+import SiteFooterCenter from "./components/FooterCenter.vue";
 export default {
   name: "App",
   components: {
-    /* HelloWorld */
+    SiteHeader,
+    SiteMain,
+    SiteBanner,
+    SiteFooterCenter,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  /* color: #2c3e50; */
+@import "@/assets/scss/style.scss";
+
+
+/* Footer end + menu payment*/
+.footer_end_menu{
+  background-color: #303030;
+  height: 100%;
 }
-
-/* Common */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* Utilities */
-.container {
-  width: 1400px;
-  margin: 0 auto;
-}
-
-/* Site Header */
-
-header {
-  height: 130px;
-}
-
-.logo_navabar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  padding: 0.5rem;
-  text-transform: uppercase;
-
-  &:hover {
-    border-bottom: 3px solid rgb(2, 2, 168);
-  }
-}
-
-/* Site Main */
-
-main {
-  color: white;
-  background-color: #1c1c1c;
-  height: 20vh;
-}
-
-/* Site Footer */
-
-footer {
-  background-color: #0282f9;
-}
-
-.footer_menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-
-  & > a {
-    color: white;
-    display: flex;
-    border: none;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0.7rem;
-  }
-}
-/* Footer center menu*/
-.footer_center_menu {
-  background-image: url("@/assets/img/footer-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  h4 {
-    color: white;
-  }
-
-  ul {
-    list-style: none;
-    li {
-      color: gray;
-    }
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: calc(100% / 3);
-  }
-}
-
-.col-3 {
-  margin-top: 2rem;
-  width: calc(100% / 3);
-}
-
-/* Footer end menu payment*/
 
 .payment {
   display: flex;
