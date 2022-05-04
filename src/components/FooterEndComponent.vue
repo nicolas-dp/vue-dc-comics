@@ -50,8 +50,11 @@ export default {
 .button{
     border: 1px solid $dc-primary;
     padding: 0.5rem;
+
+    &:hover{
+        filter: drop-shadow(0 0 6px white);
+    }
     a{
-        font-weight: bold;
         color: $dc-white;
     }
 }
@@ -65,7 +68,12 @@ export default {
   h4 {
     color: $dc-primary;
   }
+
+  a:hover{
+      filter: drop-shadow(2px 4px 6px black);
+  }
 }
+
 .payment {
   display: flex;
   justify-content: space-between;

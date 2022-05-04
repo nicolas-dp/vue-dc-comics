@@ -1,7 +1,7 @@
 <template>
   <div class="site_footer">
     <div class="container">
-      <div class="footer_menu" >
+      <div class="footer_menu">
         <a href="#" v-for="item in banner" :key="item.id">
           <img :src="item.src" :alt="item.text" />
           <span>{{ item.text }}</span>
@@ -41,7 +41,7 @@ export default {
           id: 5,
           src: require("@/assets/img/buy-dc-power-visa.svg"),
           text: "dc power visa",
-        }
+        },
       ],
     };
   },
@@ -50,7 +50,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
 .site_footer {
   background-color: $dc-primary;
 }
@@ -61,7 +60,11 @@ export default {
   flex-wrap: wrap;
   padding: 1rem;
 
-  &>a {
+  a:hover {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  & > a {
     color: $dc-white;
     display: flex;
     border: none;
@@ -71,8 +74,8 @@ export default {
     font-size: 14px;
   }
 
-  img{
-      height: 50px;
-  } 
+  img {
+    height: 50px;
+  }
 }
 </style>
