@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer_menu">
         <a href="#" v-for="item in banner" :key="item.id">
-          <img :src="item.src" :alt="item.text" />
+          <img height="50" :src="item.src" :alt="item.text" />
           <span>{{ item.text }}</span>
         </a>
       </div>
@@ -74,8 +74,5 @@ export default {
     font-size: 14px;
   }
 
-  img {
-    height: 50px;
-  }
 }
 </style>

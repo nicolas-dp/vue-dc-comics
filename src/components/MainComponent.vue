@@ -7,19 +7,18 @@
         </div>
       </div>
     </div>
-    <section class="grid">
+    <section class="grid pt-5">
       <div class="container">
-        <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 p-5">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-6 pt-5">
           <div class="col" v-for="(serie, index) in series" :key="index">
-           <div class="text_card">
-              <span>{{ serie.series }}</span>
+            <div class="card text-center p-1">
+              <img class="img-fluid" :src="serie.thumb" :alt="serie.type" />
+              <div class="card-body p-0 pt-3">
+                <p class="card-text">
+                  {{ serie.series }}
+                </p>
+              </div>
             </div>
-            <img
-              class="img-fluid"
-              :src="serie.thumb"
-              :alt="serie.type"
-            />
-            
           </div>
         </div>
       </div>
@@ -151,21 +150,10 @@ main {
   }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 1.5rem;
+.card {
+  aspect-ratio: 1 / 1!important;
+  border: none!important;
+  background-color: rgba(0, 0, 0, 0)!important;;
 }
 
-
-
-.text_card {
-  padding-top: 0.5rem;
-  span{
-    text-transform: uppercase;
-    font-family: fantasy;
-    padding-right: 0.5rem;
-  }
-}
 </style>

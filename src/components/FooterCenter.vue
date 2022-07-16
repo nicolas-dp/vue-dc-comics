@@ -2,9 +2,9 @@
   <footer class="footer_center_menu">
     <div class="footer_bg_image">
       <div class="container">
-        <div class="row">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 pt-5 w-50">
           <div
-            class="col-3"
+            class="col m-1"
             v-for="({ title, links }, index) in footerMenu"
             :key="index"
           >
@@ -167,6 +167,7 @@ export default {
 
   ul {
     list-style: none;
+    padding: 0;
     li {
       color: gray;
     }
@@ -179,23 +180,7 @@ export default {
     background-position-y: 53%;
     background-size: 40rem;
   }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: calc(100% / 3);
-    padding-bottom: 3rem;
-  }
 }
 
-.col-3 {
-  margin-top: 2rem;
-  width: calc(100% / 3);
 
-  li:hover {
-    color: $dc-white;
-    text-decoration: underline solid $dc-primary;
-  }
-}
 </style>

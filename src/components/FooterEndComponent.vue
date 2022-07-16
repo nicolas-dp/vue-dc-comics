@@ -1,6 +1,6 @@
 <template>
   <footer class="footer_end_menu">
-    <div class="container">
+    <div class="container p-3">
       <div class="payment">
         <div class="button">
           <a>sign-up now</a>
@@ -41,7 +41,6 @@ export default {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  height: 15vh;
   a {
     border: none;
   }
@@ -50,7 +49,7 @@ export default {
 .button{
     border: 1px solid $dc-primary;
     padding: 0.5rem;
-
+    color: white;
     &:hover{
         filter: drop-shadow(0 0 6px white);
     }
