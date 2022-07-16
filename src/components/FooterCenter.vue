@@ -160,7 +160,7 @@ export default {
   background-image: url("@/assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   h4 {
     color: $dc-white;
   }
@@ -192,5 +192,10 @@ export default {
 .col-3 {
   margin-top: 2rem;
   width: calc(100% / 3);
+
+  li:hover {
+    color: $dc-white;
+    text-decoration: underline solid $dc-primary;
+  }
 }
 </style>

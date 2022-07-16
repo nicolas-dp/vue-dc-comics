@@ -9,17 +9,17 @@
     </div>
     <section class="grid">
       <div class="container">
-        <div class="row">
-          <div class="col-6" v-for="(serie, index) in series" :key="index">
+        <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 p-5">
+          <div class="col" v-for="(serie, index) in series" :key="index">
+           <div class="text_card">
+              <span>{{ serie.series }}</span>
+            </div>
             <img
-              width="200"
-              height="200"
+              class="img-fluid"
               :src="serie.thumb"
               :alt="serie.type"
             />
-            <div class="text_card">
-              <span>{{ serie.series }}</span>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -158,10 +158,7 @@ main {
   padding: 1.5rem;
 }
 
-.col-6 {
-  margin-top: 3rem;
-  width: calc(100% / 6);
-}
+
 
 .text_card {
   padding-top: 0.5rem;

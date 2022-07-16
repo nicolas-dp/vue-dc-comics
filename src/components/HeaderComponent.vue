@@ -1,17 +1,40 @@
 <template>
   <header>
-    <div class="container">
-      <nav class="logo_navabar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
         <div class="logo">
           <img style="height: 70px" src="@/assets/img/dc-logo.png" alt="..." />
         </div>
-        <div class="menu">
-          <div class="border_bottom" v-for="item in menu" :key="item.id">
-            <a :href="item.href">{{ item.link }}</a>
-          </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="menu">
+                <div class="border_bottom" v-for="item in menu" :key="item.id">
+                  <a :href="item.href">{{ item.link }}</a>
+                </div>
+              </div>
+            </li>            
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!--  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
       </nav>
-    </div>
+    </div> -->
   </header>
 </template>
 

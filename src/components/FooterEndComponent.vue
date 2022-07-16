@@ -67,6 +67,11 @@ export default {
 
   h4 {
     color: $dc-primary;
+    padding-right: 1rem;
+  }
+
+  a{
+      padding: 0.5rem;
   }
 
   a:hover{
